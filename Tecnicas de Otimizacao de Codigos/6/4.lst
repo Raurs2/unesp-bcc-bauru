@@ -1,0 +1,101 @@
+Listagem da montagem do arquivo 4.asm
+
+Tabela de simbolos:
+         inicio  100
+          final  101
+          valor  130
+          media  131
+         result  132
+         repete   11
+           subb   28
+         acabar   44
+
+Programa e montagem:
+  1: Inicio   EQU   100 
+  2: Final    EQU   101 
+  3: Valor    EQU   130 
+  4: media    EQU   131 
+  5: result   EQU   132 
+  6:          MOV   A, 0 
+    [000]: b0h
+    [001]: 00h
+  7:          MOV   [Valor], A 
+    [002]: a2h
+    [003]: 82h
+  8:          mov [media], A 
+    [004]: a2h
+    [005]: 83h
+  9:         mov [result], A 
+    [006]: a2h
+    [007]: 84h
+ 10:  
+ 11:          MOV   A, [Inicio] 
+    [008]: a0h
+    [009]: 64h
+ 12:          MOV   B, A 
+    [010]: 8ah
+ 13:  
+ 14: Repete 
+ 15:           
+ 16:           
+ 17:           
+ 18:          MOV   A, [B] 
+    [011]: a1h
+ 19:          ADD A, [Valor] 
+    [012]: 02h
+    [013]: 82h
+ 20:          MOV [Valor], A 
+    [014]: a2h
+    [015]: 82h
+ 21:  
+ 22:          MOV A, 1 
+    [016]: b0h
+    [017]: 01h
+ 23:          ADD A, [media] 
+    [018]: 02h
+    [019]: 83h
+ 24:          mov [media], A 
+    [020]: a2h
+    [021]: 83h
+ 25:  
+ 26:          INC   B 
+    [022]: 41h
+ 27:          MOV   A, B 
+    [023]: 88h
+ 28:          CMP   A, [Final] 
+    [024]: 3ah
+    [025]: 65h
+ 29:          JBE   Repete 
+    [026]: 76h
+    [027]: 0bh
+ 30:  
+ 31: subb 
+ 32:         mov A, [Valor] 
+    [028]: a0h
+    [029]: 82h
+ 33:         SUB A, [media] 
+    [030]: 2ah
+    [031]: 83h
+ 34:         JBE acabar 
+    [032]: 76h
+    [033]: 2ch
+ 35:         mov [Valor], A 
+    [034]: a2h
+    [035]: 82h
+ 36:         mov A, 1 
+    [036]: b0h
+    [037]: 01h
+ 37:         ADD A, [result] 
+    [038]: 02h
+    [039]: 84h
+ 38:         mov [result], A 
+    [040]: a2h
+    [041]: 84h
+ 39:         ja subb 
+    [042]: 77h
+    [043]: 1ch
+ 40:  
+ 41: acabar 
+ 42:          HLT 
+    [044]: f4h
+ 43:          END 

@@ -1,0 +1,9 @@
+object Form3: TForm3
+  Left = 248
+  Height = 240
+  Top = 128
+  Width = 320
+  BorderStyle = bsDialog
+  Caption = 'Sobre o Programa Ajuste de Curvas'
+  LCLVersion = '2.2.2.0'
+end

@@ -1,0 +1,38 @@
+Listagem da montagem do arquivo 1.asm
+
+Tabela de simbolos:
+         inicio  100
+          final  119
+         repete    3
+
+Programa e montagem:
+  1: Inicio   EQU   100 
+  2: Final    EQU   119 
+  3:  
+  4:          MOV   A, Inicio 
+    [000]: b0h
+    [001]: 64h
+  5:          MOV   B, A 
+    [002]: 8ah
+  6:  
+  7: Repete 
+  8:          MOV   A, 1 
+    [003]: b0h
+    [004]: 01h
+  9:          mov   [B], A 
+    [005]: a3h
+ 10:          INC   B 
+    [006]: 41h
+ 11:           
+ 12:          MOV   A, B 
+    [007]: 88h
+ 13:          CMP   A, Final 
+    [008]: 3ch
+    [009]: 77h
+ 14:          JBE   Repete 
+    [010]: 76h
+    [011]: 03h
+ 15:           
+ 16:          HLT 
+    [012]: f4h
+ 17:          END 

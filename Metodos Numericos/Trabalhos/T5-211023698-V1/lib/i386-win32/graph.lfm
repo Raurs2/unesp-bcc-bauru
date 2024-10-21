@@ -1,0 +1,81 @@
+object Form2: TForm2
+  Left = 262
+  Height = 560
+  Top = 131
+  Width = 840
+  Caption = 'Ajustes de Curvas'
+  ClientHeight = 560
+  ClientWidth = 840
+  OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poDesktopCenter
+  LCLVersion = '2.2.2.0'
+  object Chart1: TChart
+    Left = 0
+    Height = 560
+    Top = 0
+    Width = 840
+    AxisList = <    
+      item
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+        Title.LabelBrush.Style = bsClear
+      end    
+      item
+        Alignment = calBottom
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelBrush.Style = bsClear
+      end>
+    Foot.Brush.Color = clBtnFace
+    Foot.Font.Color = clBlue
+    Legend.Visible = True
+    Title.Brush.Color = clBtnFace
+    Title.Font.Color = clBlue
+    Title.Text.Strings = (
+      'TAChart'
+    )
+    Align = alClient
+    object Chart1LineSeries0: TLineSeries
+      Title = 'Pontos de Amostra'
+      LineType = ltNone
+      Pointer.Brush.Color = clBackground
+      Pointer.Style = psCircle
+      Pointer.Visible = True
+      ShowPoints = True
+    end
+    object Chart1LineSeries1: TLineSeries
+    end
+    object Chart1LineSeries2: TLineSeries
+    end
+    object Chart1LineSeries3: TLineSeries
+    end
+    object Chart1LineSeries4: TLineSeries
+    end
+    object Chart1LineSeries5: TLineSeries
+    end
+    object Chart1LineSeries6: TLineSeries
+    end
+    object Chart1LineSeries7: TLineSeries
+    end
+    object Chart1LineSeries8: TLineSeries
+    end
+    object Chart1LineSeries9: TLineSeries
+    end
+    object Chart1LineSeries10: TLineSeries
+    end
+    object Chart1LineSeries11: TLineSeries
+    end
+    object Chart1LineSeries12: TLineSeries
+    end
+    object Chart1LineSeries13: TLineSeries
+    end
+    object Chart1LineSeries14: TLineSeries
+    end
+    object Chart1LineSeries15: TLineSeries
+    end
+  end
+end

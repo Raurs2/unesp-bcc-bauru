@@ -1,0 +1,2 @@
+Este programa, feito por um aluno, em 2017 utiliza o arquivo Interpretador.dll de 2017.
+Não utilize esta versão do Interpretador.dll com os novos programas que você desenvolveu.

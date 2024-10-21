@@ -1,0 +1,14 @@
+    if(cod == "program") return"PROGRAMA";
+    else if(cod == "var") return"VARIAVEL";
+    else if(cod == "integer") return"INTEIRO";
+    else if(cod == "procedure") return"PROCEDIMENTO";
+    else if(cod == "begin") return"INICIO";
+    else if(cod == "if") return"SE";
+    else if(cod == "div") return"DIV";
+    else if(cod == "then") return"ENTAO";
+    else if(cod == "else") return "SENAO";
+    else if(cod == "end") return"FIM";
+    else if(cod == "read") return "LER";
+    else if(cod == "while") return"ENQUANTO";
+    else if(cod == "do") return"FACA";
+    else if(cod == "write") return "ESCREVER";

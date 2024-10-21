@@ -1,0 +1,9 @@
+object Form2: TForm2
+  Left = 731
+  Height = 240
+  Top = 244
+  Width = 199
+  BorderStyle = bsDialog
+  Caption = 'Sobre o Programa Integrais Numéricas'
+  LCLVersion = '2.2.2.0'
+end

@@ -1,0 +1,51 @@
+Listagem da montagem do arquivo exe02.asm
+
+Tabela de simbolos:
+             nn   90
+             rr   91
+          func1    6
+           para   23
+
+Programa e montagem:
+  1: NN equ 90 
+  2: RR equ 91 
+  3:  
+  4:     mov A, 0 
+    [000]: b0h
+    [001]: 00h
+  5:     mov [RR], A 
+    [002]: a2h
+    [003]: 5bh
+  6:     call func1 
+    [004]: e8h
+    [005]: 06h
+  7: func1 
+  8:     mov A, [NN] 
+    [006]: a0h
+    [007]: 5ah
+  9:     cmp A, 0 
+    [008]: 3ch
+    [009]: 00h
+ 10:     jz para 
+    [010]: 74h
+    [011]: 17h
+ 11:     add A, [RR] 
+    [012]: 02h
+    [013]: 5bh
+ 12:     mov [RR], A 
+    [014]: a2h
+    [015]: 5bh
+ 13:     mov A, [NN] 
+    [016]: a0h
+    [017]: 5ah
+ 14:     dec A  
+    [018]: 42h
+ 15:     mov [NN], A 
+    [019]: a2h
+    [020]: 5ah
+ 16:     call func1 
+    [021]: e8h
+    [022]: 06h
+ 17: para 
+ 18:     hlt 
+    [023]: f4h

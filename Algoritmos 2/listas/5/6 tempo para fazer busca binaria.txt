@@ -1,0 +1,4 @@
+Se preciso de t segundos para fazer uma busca binária em um vetor com n elementos, de
+quando tempo preciso para fazer uma busca em n² elementos?
+
+se precisa de t para n, e uma busca binaria faz metade do esforço então n*n = t * t

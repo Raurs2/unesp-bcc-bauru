@@ -1,0 +1,62 @@
+Listagem da montagem do arquivo exe4.asm
+
+Tabela de simbolos:
+              n  100
+              m  101
+              s  102
+         salta1   17
+         salta2   22
+
+Programa e montagem:
+  1: N   equ 100 
+  2: M   equ 101 
+  3: S   equ 102 
+  4:  
+  5:     mov A, 0 
+    [000]: b0h
+    [001]: 00h
+  6:     mov A, [N] 
+    [002]: a0h
+    [003]: 64h
+  7:     add A, [M] 
+    [004]: 02h
+    [005]: 65h
+  8:     cmp A, 50 
+    [006]: 3ch
+    [007]: 32h
+  9:     jc salta1 
+    [008]: 72h
+    [009]: 11h
+ 10:     cmp A, 100 
+    [010]: 3ch
+    [011]: 64h
+ 11:     jnc salta2 
+    [012]: 73h
+    [013]: 16h
+ 12:     mov [S], A 
+    [014]: a2h
+    [015]: 66h
+ 13:     hlt 
+    [016]: f4h
+ 14: salta1 
+ 15:     mov A, 50 
+    [017]: b0h
+    [018]: 32h
+ 16:     mov [S], A 
+    [019]: a2h
+    [020]: 66h
+ 17:     hlt 
+    [021]: f4h
+ 18: salta2 
+ 19:     mov A, 100 
+    [022]: b0h
+    [023]: 64h
+ 20:     mov [S], A 
+    [024]: a2h
+    [025]: 66h
+ 21:     hlt 
+    [026]: f4h
+ 22:      
+ 23:  
+ 24:  
+ 25:      

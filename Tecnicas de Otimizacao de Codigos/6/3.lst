@@ -1,0 +1,88 @@
+Listagem da montagem do arquivo 3.asm
+
+Tabela de simbolos:
+              i  200
+              f  255
+          menor  100
+          maior  101
+          repet    9
+         troca1   19
+         troca2   27
+
+Programa e montagem:
+  1: i       equ     200 
+  2: f       equ     255 
+  3: menor   equ     100 
+  4: maior   equ     101 
+  5:  
+  6:         mov     A, i 
+    [000]: b0h
+    [001]: c8h
+  7:         mov     B, A 
+    [002]: 8ah
+  8:  
+  9:         mov     A, [B] 
+    [003]: a1h
+ 10:         mov     [menor], A 
+    [004]: a2h
+    [005]: 64h
+ 11:         mov     [maior], A 
+    [006]: a2h
+    [007]: 65h
+ 12:         inc     B 
+    [008]: 41h
+ 13:  
+ 14: repet 
+ 15:         mov     A, [B] 
+    [009]: a1h
+ 16:         inc     B 
+    [010]: 41h
+ 17:  
+ 18:         cmp     A, [menor]                           ;if A < menor menor = A c = 1 
+    [011]: 3ah
+    [012]: 64h
+ 19:         jc troca1 
+    [013]: 72h
+    [014]: 13h
+ 20:  
+ 21:         cmp     A, [maior]                            ;if A > maior maior = A c = 0 z = 0 
+    [015]: 3ah
+    [016]: 65h
+ 22:         ja troca2 
+    [017]: 77h
+    [018]: 1bh
+ 23:  
+ 24: troca1 
+ 25:         mov [menor], A 
+    [019]: a2h
+    [020]: 64h
+ 26:  
+ 27:         mov A, B 
+    [021]: 88h
+ 28:         cmp A, 0 
+    [022]: 3ch
+    [023]: 00h
+ 29:         jnz repet 
+    [024]: 75h
+    [025]: 09h
+ 30:  
+ 31:         hlt 
+    [026]: f4h
+ 32:  
+ 33: troca2 
+ 34:         mov [maior], A 
+    [027]: a2h
+    [028]: 65h
+ 35:  
+ 36:         mov A, B 
+    [029]: 88h
+ 37:         cmp A, 0 
+    [030]: 3ch
+    [031]: 00h
+ 38:         jnz repet 
+    [032]: 75h
+    [033]: 09h
+ 39:  
+ 40:         hlt 
+    [034]: f4h
+ 41:         end 

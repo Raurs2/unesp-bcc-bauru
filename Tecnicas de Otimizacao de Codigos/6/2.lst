@@ -1,0 +1,54 @@
+Listagem da montagem do arquivo 2.asm
+
+Tabela de simbolos:
+         inicio  100
+          final  119
+          valor  130
+         repete    7
+
+Programa e montagem:
+  1: Inicio   EQU   100 
+  2: Final    EQU   119 
+  3: Valor    EQU   130 
+  4:  
+  5:          MOV   A, 0 
+    [000]: b0h
+    [001]: 00h
+  6:          MOV   [Valor], A 
+    [002]: a2h
+    [003]: 82h
+  7:  
+  8:          MOV   A, Inicio 
+    [004]: b0h
+    [005]: 64h
+  9:          MOV   B, A 
+    [006]: 8ah
+ 10:  
+ 11: Repete 
+ 12:          MOV   A, [Valor] 
+    [007]: a0h
+    [008]: 82h
+ 13:          MOV   [B], A 
+    [009]: a3h
+ 14:          INC   B 
+    [010]: 41h
+ 15:           
+ 16:          ADD A, 1 
+    [011]: 04h
+    [012]: 01h
+ 17:          MOV [Valor], A 
+    [013]: a2h
+    [014]: 82h
+ 18:  
+ 19:          MOV   A, B 
+    [015]: 88h
+ 20:          CMP   A, Final 
+    [016]: 3ch
+    [017]: 77h
+ 21:          JBE   Repete 
+    [018]: 76h
+    [019]: 07h
+ 22:           
+ 23:          HLT 
+    [020]: f4h
+ 24:          END 

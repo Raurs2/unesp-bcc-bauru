@@ -1,0 +1,5 @@
+gcc -pg Realce.c -o Realce -lm
+
+gprof <executable-filename> gmon.out  >output.txt
+
+cd /d d:\Docs\Java

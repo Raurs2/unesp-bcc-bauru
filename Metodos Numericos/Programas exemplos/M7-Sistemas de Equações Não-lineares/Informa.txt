@@ -1,0 +1,45 @@
+﻿Durante as aulas de MNC os alunos receberam vários programas.
+
+São programas apresentados no texto MNC-MARS, como segue:
+- Executável
+- Figuras e ícones para elaborar programa equivalente
+- Arquivos de ajuda
+
+São 9 programas da série Introdutória:
+1 I0-Conversão Bin-Dec Dec-Bin
+2 I1-Ciclo Milenar
+3 I2-Erro do Computador
+4 I3-Séries de Potências
+5 I4-Brincando de Desenhar
+6 I5-Interpretador DLL
+7 I6-Interpretador Exemplo DOS
+8 I7-Interpretador Exemplo Win
+9 I8-Programa da Patricinha
+
+São 8 programas da série Métodos:
+1 M1-Derivadas
+2 M2-Raízes - R1
+3 M3-Sistemas de Equações Lineares
+4 M4-Interpolação
+5 M5-Ajustes de Curvas
+6 M6-Integrais Numéricas
+  M6-Integrais Numéricas-B (só executável)
+7 M6-Integrais Numéricas-C
+8 M7-Sistemas de Equações Não-lineares
+
+O último programa da série Métodos é distribuído sem as
+costumeiras explicações de como fazê-lo.
+
+Para todos os outros, as explicações estão no texto MNC-MARS.
+
+Caso queira reproduzí-lo, ficará por sua conta. Confio em você.
+
+O arquivo M7-Sistemas de Equações Não-lineares.rar contém:
+- SistemasNaoLineares.exe
+- Interpretador.dll
+- SistemasNaoLineares.pdf
+- Informa.txt (este arquivo)
+- Figuras (diretório com figuras de botões e ícone)
+- Exemplos (diretório com 12 exemplos)
+
+Divirta-se.
