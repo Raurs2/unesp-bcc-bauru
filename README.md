@@ -5,4 +5,4 @@ A repository containing the exercises, programs, and assignments I completed dur
 Distributed under the MIT License.
 
 # Created By
-This archive was created by [Raul Alexandre]([https://pages.github.com/](https://github.com/Raurs2)).
+This archive was created by [Raul Alexandre](https://github.com/Raurs2).
